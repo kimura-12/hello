@@ -41,6 +41,7 @@ public class Kazuate{
         } else{
             System.out.println("残念でした");
             System.out.println("上限回数に達しました");
+            System.out.println("正解は" + rand + "です");
         }
         
     }
