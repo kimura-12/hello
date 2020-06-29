@@ -7,27 +7,27 @@ public class Kazuate{
 
         int rand = (int)(Math.random() * 80) + 10;
         
-        System.out.print("かず当てゲーム");
+        System.out.println("Numbers Game!!");
 
         int times = 5;
         int count = 1;
         
-        System.out.print("数字を入力してください");
+        System.out.println("Please inpute a number");
         int num = sc.nextInt();
 
         while(count < 5 && rand != num){
             
-            System.out.println("はずれです");
+            System.out.println("Miss");
 
             if (num > rand) {
-                System.out.println("大きいです");
+                System.out.println("Your input number is big");
                 if ((num - rand) >= 20){
-                    System.out.println("20以上差があります");
+                    System.out.println("more than 20 difference");
                 }
             } else {
-                System.out.println("小さいです");
+                System.out.println("Your input number is small");
                 if ((rand - num) >= 20){
-                    System.out.println("20以上差があります");
+                    System.out.println("more than 20 difference");
                 }
             }
 
@@ -37,11 +37,11 @@ public class Kazuate{
         }
 
         if (rand == num){
-            System.out.println("当たりです");
+            System.out.println("hit");
         } else{
-            System.out.println("残念でした");
-            System.out.println("上限回数に達しました");
-            System.out.println("正解は" + rand + "です");
+            System.out.println("reached the maximum number of times");
+            System.out.println("That is too bad.");
+            System.out.println("The correct answer is " + rand);
         }
         
     }
