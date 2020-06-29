@@ -7,7 +7,7 @@ public class Kazuate{
 
         int rand = (int)(Math.random() * 100);
         if (rand < 10){
-            rand = rand + 10
+            rand = rand + 10;
         }
         
         System.out.println("Numbers Game!!");
