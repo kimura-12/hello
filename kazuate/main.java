@@ -5,7 +5,10 @@ public class Kazuate{
 
         Scanner sc = new Scanner(System.in);
 
-        int rand = (int)(Math.random() * 80) + 10;
+        int rand = (int)(Math.random() * 100);
+        if (rand < 10){
+            rand = rand + 10
+        }
         
         System.out.println("Numbers Game!!");
 
