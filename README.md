@@ -1,4 +1,5 @@
 # hello
+大規模ソフトウェア論にて使用
 GitHubフローの練習
 
 # 自己紹介
@@ -7,4 +8,4 @@ Graduate School of System Informatics
 
 Name Takumi Kimura
 
-最近は家に引きこもっています．
+
