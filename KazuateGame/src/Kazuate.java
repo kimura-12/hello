@@ -1,25 +1,39 @@
-import java.util.*;
+import java.util.Scanner;
 
-public class Kazuate{
-    public static void main(String args[]) {
+public class Kazuate {
 
-        Scanner sc = new Scanner(System.in);
+    public Kazuate() {
+	}
+
+	/**
+	 * ゲームの開始
+	 */
+	public void start() {
+		game();
+	}
+
+	/*
+	 * ゲームの内容
+	 */
+	public void game() {
+
+		Scanner sc = new Scanner(System.in);
 
         int rand = (int)(Math.random() * 100);
         if (rand < 10){
             rand = rand + 10;
         }
-        
+
         System.out.println("Numbers Game!!");
 
         int times = 5;
         int count = 1;
-        
+
         System.out.println("Please inpute a number");
         int num = sc.nextInt();
 
-        while(count < 5 && rand != num){
-            
+        while(count < times && rand != num){
+
             System.out.println("Miss");
 
             if (num > rand) {
@@ -46,6 +60,8 @@ public class Kazuate{
             System.out.println("That is too bad.");
             System.out.println("The correct answer is " + rand);
         }
-        
-    }
+
+        sc.close();
+	}
+
 }
